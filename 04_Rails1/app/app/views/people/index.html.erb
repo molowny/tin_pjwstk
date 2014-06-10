@@ -1,0 +1,23 @@
+<h1>Wprowadzona osoba</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>First name</th>
+      <th>Last name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td><%= session[:first_name] %></td>
+      <td><%= session[:last_name] %></td>
+      <td><%= session[:description] %></td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Ustaw osobę', new_person_path %>
